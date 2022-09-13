@@ -5,7 +5,7 @@ service:
   - docker
 
 before_install:
-  - docker build -t wdickerson/dokcer-react -f Dockerfile.dev .
+  - docker build -t wdickerson/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true wdickerson/docker-react npm run test
